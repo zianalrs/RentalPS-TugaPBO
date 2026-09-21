@@ -1,6 +1,7 @@
 # Sistem Manajemen Rental PS
 
 **Nama:** Zian Alrais
+
 **NIM:** 2509116064
 
 ---
@@ -8,8 +9,6 @@
 ## Studi Kasus
 
 Program ini adalah aplikasi berbasis konsol (Java) untuk mengelola usaha rental PlayStation. Pengguna dapat melihat daftar PlayStation beserta statusnya, melakukan booking berdasarkan durasi sewa, melihat riwayat transaksi, serta mengelola data PlayStation (tambah, ubah status, dan hapus). Harga sewa dihitung otomatis sesuai jenis PlayStation: PS4 Rp10.000 per jam dan PS5 Rp15.000 per jam.
-
-Program terdiri dari enam kelas: `PlayStation` (superclass), `PS4` dan `PS5` (subclass), `Pelanggan`, `Transaksi`, dan `Main`.
 
 ---
 
@@ -146,31 +145,53 @@ int totalBayar = durasi * hargaPerJam;
 ### Menu Utama
 [ss menu utama]
 
+Menu utama muncul saat program dijalankan dan berisi lima pilihan: Lihat PlayStation, Booking PS, Lihat Transaksi, Kelola PlayStation, dan Keluar. Menu ditampilkan berulang sampai pengguna memilih 0.
+
 ### Lihat PlayStation
 [ss lihat playstation]
+
+Menampilkan seluruh PlayStation beserta ID, jenis, status (Tersedia atau Disewa), dan harga per jam. Data awal berisi dua unit PS4 dan satu unit PS5.
 
 ### Booking PS
 [ss input booking 1]
 
+Pengguna memilih ID PlayStation yang ingin disewa. Jika ID tidak ditemukan atau PlayStation sedang disewa, booking dibatalkan.
+
 [ss input booking 2]
+
+Pengguna kemudian mengisi ID pelanggan, nama, nomor HP, ID transaksi, dan durasi sewa. ID pelanggan dan ID transaksi harus unik, sehingga program meminta input ulang jika ID sudah dipakai.
 
 ### Booking Berhasil
 [ss booking berhasil]
 
+Setelah data valid, program menampilkan rincian booking dan menghitung total bayar dari durasi dikali harga per jam. Harga diambil dari method `getHargaPerJam()` milik subclass PS4 atau PS5, dan status PlayStation otomatis berubah menjadi "Disewa".
+
 ### Lihat Transaksi
 [ss lihat transaksi]
+
+Menampilkan riwayat transaksi yang berisi ID transaksi, nama pelanggan, jenis PS, durasi, dan total bayar. Jika belum ada transaksi, program menampilkan pesan "Belum ada transaksi."
 
 ### Kelola PlayStation
 [ss menu kelola playstation]
 
+Submenu untuk mengelola data PlayStation, yaitu menambah, melihat, mengubah status, dan menghapus PS. Pilihan 0 mengembalikan pengguna ke menu utama.
+
 #### Tambah PS
 [ss input tambah ps]
+
+Pengguna memasukkan ID PS yang belum terpakai, lalu memilih jenisnya (PS4 atau PS5). Program membuat objek subclass yang sesuai dan menambahkannya ke daftar.
 
 #### Ubah Status PS
 [ss input ubah status ps]
 
+Pengguna memasukkan ID PS, lalu mengubah statusnya secara manual menjadi Tersedia atau Disewa. Fitur ini berguna, misalnya, saat sewa sudah selesai dan PS perlu dikembalikan ke status Tersedia.
+
 #### Hapus PS
 [ss input hapus ps]
 
+Menghapus PlayStation berdasarkan ID. PS yang sedang berstatus "Disewa" tidak dapat dihapus, dan program menampilkan pesan penolakan.
+
 ### Keluar Program
 [ss keluar program]
+
+Memilih 0 pada menu utama menghentikan program dan menampilkan pesan terima kasih.
