@@ -105,26 +105,26 @@ int totalBayar = durasi * hargaPerJam;
 Menu utama muncul saat program dijalankan dan berisi lima pilihan: Lihat PlayStation, Booking PS, Lihat Transaksi, Kelola PlayStation, dan Keluar. Menu ditampilkan berulang sampai pengguna memilih 0.
 
 ### Lihat PlayStation
-[ss lihat playstation]
+<img width="305" height="428" alt="image" src="https://github.com/user-attachments/assets/0982dd14-ec44-464e-9586-a42939c99fe9" />
+
 
 Menampilkan seluruh PlayStation beserta ID, jenis, status (Tersedia atau Disewa), dan harga per jam. Data awal berisi dua unit PS4 dan satu unit PS5.
 
 ### Booking PS
-[ss input booking 1]
+<img width="308" height="147" alt="image" src="https://github.com/user-attachments/assets/bb2e2e85-4997-457b-b804-3a8b05ba0183" />
 
-Pengguna memilih ID PlayStation yang ingin disewa. Jika ID tidak ditemukan atau PlayStation sedang disewa, booking dibatalkan.
 
-[ss input booking 2]
-
-Pengguna kemudian mengisi ID pelanggan, nama, nomor HP, ID transaksi, dan durasi sewa. ID pelanggan dan ID transaksi harus unik, sehingga program meminta input ulang jika ID sudah dipakai.
+Pengguna memilih ID PlayStation yang ingin disewa. Jika ID tidak ditemukan atau PlayStation sedang disewa, booking dibatalkan. Pengguna kemudian mengisi ID pelanggan, nama, nomor HP, ID transaksi, dan durasi sewa. ID pelanggan dan ID transaksi harus unik, sehingga program meminta input ulang jika ID sudah dipakai.
 
 ### Booking Berhasil
-[ss booking berhasil]
+<img width="301" height="192" alt="image" src="https://github.com/user-attachments/assets/5f691326-eb57-48d1-9023-f8fe47158f5e" />
+
 
 Setelah data valid, program menampilkan rincian booking dan menghitung total bayar dari durasi dikali harga per jam. Harga diambil dari method `getHargaPerJam()` milik subclass PS4 atau PS5, dan status PlayStation otomatis berubah menjadi "Disewa".
 
 ### Lihat Transaksi
-[ss lihat transaksi]
+<img width="308" height="110" alt="image" src="https://github.com/user-attachments/assets/b86ef93d-8c71-4c5b-87f7-4bc0e61c1a30" />
+
 
 Menampilkan riwayat transaksi yang berisi ID transaksi, nama pelanggan, jenis PS, durasi, dan total bayar. Jika belum ada transaksi, program menampilkan pesan "Belum ada transaksi."
 
