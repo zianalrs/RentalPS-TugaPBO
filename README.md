@@ -129,26 +129,33 @@ Setelah data valid, program menampilkan rincian booking dan menghitung total bay
 Menampilkan riwayat transaksi yang berisi ID transaksi, nama pelanggan, jenis PS, durasi, dan total bayar. Jika belum ada transaksi, program menampilkan pesan "Belum ada transaksi."
 
 ### Kelola PlayStation
-[ss menu kelola playstation]
+<img width="307" height="210" alt="image" src="https://github.com/user-attachments/assets/742e18dd-8f1b-4ac6-8aa5-adea6aa83088" />
+
 
 Submenu untuk mengelola data PlayStation, yaitu menambah, melihat, mengubah status, dan menghapus PS. Pilihan 0 mengembalikan pengguna ke menu utama.
 
 #### Tambah PS
-[ss input tambah ps]
+<img width="313" height="192" alt="image" src="https://github.com/user-attachments/assets/d59844df-2819-496c-a743-ad463c4b7dfe" />
+
+
 
 Pengguna memasukkan ID PS yang belum terpakai, lalu memilih jenisnya (PS4 atau PS5). Program membuat objek subclass yang sesuai dan menambahkannya ke daftar.
 
 #### Ubah Status PS
-[ss input ubah status ps]
+<img width="302" height="256" alt="image" src="https://github.com/user-attachments/assets/b0f1f590-8d77-4131-888a-c67043e9a26f" />
+
+
 
 Pengguna memasukkan ID PS, lalu mengubah statusnya secara manual menjadi Tersedia atau Disewa. Fitur ini berguna, misalnya, saat sewa sudah selesai dan PS perlu dikembalikan ke status Tersedia.
 
 #### Hapus PS
-[ss input hapus ps]
+<img width="308" height="118" alt="image" src="https://github.com/user-attachments/assets/e058bfd6-d4ef-4eca-908c-4cb248d5072f" />
+
 
 Menghapus PlayStation berdasarkan ID. PS yang sedang berstatus "Disewa" tidak dapat dihapus, dan program menampilkan pesan penolakan.
 
 ### Keluar Program
-[ss keluar program]
+<img width="410" height="255" alt="image" src="https://github.com/user-attachments/assets/05381867-f6d0-4002-b10b-a11972bcd00a" />
+
 
 Memilih 0 pada menu utama menghentikan program dan menampilkan pesan terima kasih.
