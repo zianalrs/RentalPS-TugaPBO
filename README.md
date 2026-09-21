@@ -14,7 +14,7 @@ Program ini adalah aplikasi berbasis konsol (Java) untuk mengelola usaha rental 
 
 ## Diagram Kelas
 
-<img width="1773" height="1762" alt="diagram-kelas" src="https://github.com/user-attachments/assets/66ddb503-8952-4cb1-a15a-55543a7c19f2" />
+<img width="1541" height="1185" alt="diagram-kelas-sederhana" src="https://github.com/user-attachments/assets/647421af-f565-4a48-8079-01e54408d9e2" />
 
 
 **Hierarki class:** `PS4` dan `PS5` merupakan subclass dari `PlayStation`. Keduanya mewarisi atribut (`idPs`, `jenisPs`, `status`) dan method (`getIdPs()`, `getStatus()`, `setStatus()`, `tampilkanData()`) dari superclass, lalu menyesuaikan harga sewa masing-masing dengan meng-override `getHargaPerJam()`.
