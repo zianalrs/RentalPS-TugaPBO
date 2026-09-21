@@ -99,7 +99,8 @@ int totalBayar = durasi * hargaPerJam;
 ## Tangkapan Layar Program
 
 ### Menu Utama
-[ss menu utama]
+<img width="322" height="220" alt="image" src="https://github.com/user-attachments/assets/506cd304-3c5b-457d-aeac-cdfec0de400c" />
+
 
 Menu utama muncul saat program dijalankan dan berisi lima pilihan: Lihat PlayStation, Booking PS, Lihat Transaksi, Kelola PlayStation, dan Keluar. Menu ditampilkan berulang sampai pengguna memilih 0.
 
