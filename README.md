@@ -14,52 +14,8 @@ Program ini adalah aplikasi berbasis konsol (Java) untuk mengelola usaha rental 
 
 ## Diagram Kelas
 
-```mermaid
-classDiagram
-    class PlayStation {
-        -int idPs
-        -String jenisPs
-        -String status
-        +PlayStation(int idPs, String jenisPs)
-        +getIdPs() int
-        +getJenisPs() String
-        +getStatus() String
-        +setStatus(String status) void
-        +getHargaPerJam() int
-        +tampilkanData() void
-    }
-    class PS4 {
-        +PS4(int idPs)
-        +getHargaPerJam() int
-    }
-    class PS5 {
-        +PS5(int idPs)
-        +getHargaPerJam() int
-    }
-    class Pelanggan {
-        -int idPelanggan
-        -String nama
-        -String noHp
-        +tampilkanData() void
-    }
-    class Transaksi {
-        -int idTransaksi
-        -String namaPelanggan
-        -String jenisPs
-        -int durasi
-        -int totalBayar
-        +tampilkanData() void
-    }
-    class Main {
-        +main(String[] args) void
-    }
+<img width="1773" height="1762" alt="diagram-kelas" src="https://github.com/user-attachments/assets/66ddb503-8952-4cb1-a15a-55543a7c19f2" />
 
-    PlayStation <|-- PS4
-    PlayStation <|-- PS5
-    Main ..> PlayStation : mengelola
-    Main ..> Pelanggan : membuat
-    Main ..> Transaksi : membuat
-```
 
 **Hierarki class:** `PS4` dan `PS5` merupakan subclass dari `PlayStation`. Keduanya mewarisi atribut (`idPs`, `jenisPs`, `status`) dan method (`getIdPs()`, `getStatus()`, `setStatus()`, `tampilkanData()`) dari superclass, lalu menyesuaikan harga sewa masing-masing dengan meng-override `getHargaPerJam()`.
 
